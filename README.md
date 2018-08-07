@@ -22,6 +22,11 @@ protected $routeMiddleware = [
 
 Now you can apply the middleware to your routes or middleware groups.
 
+You can publish the config by running:
+```bash
+$ php artisan vendor:publish --provider="Signifly\\Pagination\\PaginationServiceProvider"
+```
+
 ## Testing
 ```bash
 $ composer test

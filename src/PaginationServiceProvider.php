@@ -1,6 +1,6 @@
 <?php
 
-namespace Signifly\Shopify\Laravel;
+namespace Signifly\Pagination;
 
 use Illuminate\Support\ServiceProvider;
 

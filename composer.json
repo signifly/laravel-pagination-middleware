@@ -37,6 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
+                "Signifly\\Shopify\\PaginationServiceProvider"
             ],
             "aliases": {
             }
