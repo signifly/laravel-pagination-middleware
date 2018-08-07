@@ -16,7 +16,7 @@ Add the middleware to your `App\Http\Kernel.php` file:
 
 ```php
 protected $routeMiddleware = [
-    'pagination' => \App\Http\Middleware\Pagination::class,
+    'pagination' => \Signifly\Pagination\Pagination::class,
 ];
 ```
 
