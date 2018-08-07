@@ -20,7 +20,7 @@ protected $routeMiddleware = [
 ];
 ```
 
-Now you can apply the middleware to 
+Now you can apply the middleware to your routes or middleware groups.
 
 ## Testing
 ```bash
