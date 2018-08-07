@@ -1,6 +1,6 @@
 # A pagination middleware for your Laravel app
 
-The `signifly/laravel-pagination-middleware` package allows you to easily configure pagination min and max values in your Laravel app.
+The `signifly/laravel-pagination-middleware` package allows you to easily configure pagination default and max values in your Laravel app.
 
 ## Installation
 
