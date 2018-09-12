@@ -15,15 +15,9 @@ class Pagination
      */
     public function handle($request, Closure $next)
     {
-        $defaultCount = config('pagination.defaultCount');
-        $maximumCount = config('pagination.maximumCount');
         $paginationKey = config('pagination.key');
-        $paginationValue = min(
-            intval($request->query($paginationKey, $defaultCount)),
-            $maximumCount
-        );
 
-        $request->offsetSet($paginationKey, $paginationValue);
+        $request->offsetSet($paginationKey, $request->paginationCount());
 
         return $next($request);
     }

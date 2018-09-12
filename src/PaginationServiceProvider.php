@@ -2,6 +2,7 @@
 
 namespace Signifly\Pagination;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;
 
 class PaginationServiceProvider extends ServiceProvider
@@ -18,6 +19,17 @@ class PaginationServiceProvider extends ServiceProvider
         ], 'pagination');
 
         $this->mergeConfigFrom(__DIR__.'/../config/pagination.php', 'pagination');
+
+        Request::macro('paginationCount', function ($key = null) {
+            $defaultCount = config('pagination.defaultCount');
+            $maximumCount = config('pagination.maximumCount');
+            $paginationKey = $key ?? config('pagination.key');
+
+            return min(
+                intval($this->query($paginationKey, $defaultCount)),
+                $maximumCount
+            );
+        });
     }
 
     /**
