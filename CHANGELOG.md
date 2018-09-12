@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-pagination-middleware` will be documented in this file
 
+## 1.0.2 - 2018-09-12
+- Added request macro that handles pagination count logic
+
 ## 1.0.1 - 2018-08-07
 - Make the package auto-discoverable
 - Fixed minor typos
