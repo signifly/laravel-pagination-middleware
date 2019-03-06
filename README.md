@@ -1,5 +1,11 @@
 # A pagination middleware for your Laravel app
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/signifly/laravel-pagination-middleware.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-pagination-middleware)
+[![Build Status](https://img.shields.io/travis/signifly/laravel-pagination-middleware/master.svg?style=flat-square)](https://travis-ci.org/signifly/laravel-pagination-middleware)
+[![StyleCI](https://styleci.io/repos/143860281/shield?branch=master)](https://styleci.io/repos/143860281)
+[![Quality Score](https://img.shields.io/scrutinizer/g/signifly/laravel-pagination-middleware.svg?style=flat-square)](https://scrutinizer-ci.com/g/signifly/laravel-pagination-middleware)
+[![Total Downloads](https://img.shields.io/packagist/dt/signifly/laravel-pagination-middleware.svg?style=flat-square)](https://packagist.org/packages/signifly/laravel-pagination-middleware)
+
 The `signifly/laravel-pagination-middleware` package allows you to easily configure pagination default and max values in your Laravel app.
 
 ## Installation
